@@ -45,7 +45,7 @@ const EXPERIENCES = [
       "Translated business requirements and existing web workflows into responsive, production-ready mobile experiences, building reusable components and maintaining feature parity across Flutter, Spring Boot, and web."
     ],
     tags: ["FLUTTER", "DART", "JAVA", "SPRING BOOT", "REST APIs"],
-    highlights: ["7 BUSINESS ROLES", "END-TO-END ORDER LIFECYCLE", "MOBILE + BACKEND + WEB"]
+    highlights: ["7 BUSINESS ROLES", "END-TO-END ORDER LIFECYCLE", "MOBILE"]
   }
 ];
 

@@ -200,11 +200,11 @@ export function Hero() {
             </p>
             
             <div className="flex flex-wrap gap-4">
-              <button data-cursor="VIEW" className="group relative flex items-center gap-3 font-mono text-[10px] text-base text-white tracking-widest uppercase px-8 py-4 border border-white/20 overflow-hidden backdrop-blur-sm">
+              <a href="#projects" data-cursor="VIEW" className="group relative inline-flex items-center gap-3 font-mono text-[10px] md:text-xs text-white tracking-widest uppercase px-8 py-4 border border-white/20 overflow-hidden backdrop-blur-sm">
                 <div className="absolute inset-0 bg-white translate-y-[100%] group-hover:translate-y-0 transition-transform duration-300 ease-[0.16,1,0.3,1]" />
                 <span className="relative z-10 group-hover:text-black transition-colors duration-300">VIEW PROJECTS</span>
                 <span className="relative z-10 text-lg leading-none group-hover:text-black group-hover:translate-x-1 transition-all duration-300">→</span>
-              </button>
+              </a>
             </div>
           </motion.div>
 
