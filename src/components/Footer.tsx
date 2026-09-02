@@ -121,7 +121,7 @@ export function Footer() {
             </div>
           </div>
 
-          <p className="font-sans text-base md:text-lg lg:text-xl text-[#A99CC8] max-w-md mb-8 lg:mb-12 font-light leading-relaxed border-l border-[#7567B5]/30 pl-4 md:pl-6">
+          <p className="font-sans text-base md:text-lg lg:text-xl text-white max-w-md mb-8 lg:mb-12 font-light leading-relaxed border-l border-[#7567B5]/30 pl-4 md:pl-6">
             I like building things that are useful, thoughtful and worth shipping.
           </p>
 
