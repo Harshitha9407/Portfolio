@@ -218,11 +218,11 @@ const FlowForgeVisual = () => {
 };
 
 const HealthVisual = () => (
-  <div className="relative w-full h-[300px] lg:h-[450px] bg-[#0A0F18] overflow-hidden rounded-xl border border-white/10 group-hover/project:border-[#06b6d4] transition-all duration-700 shadow-2xl flex items-center justify-center gap-4 md:gap-8 p-6">
-      <div className="relative w-[140px] md:w-[180px] h-[280px] md:h-[360px] rounded-[24px] overflow-hidden shadow-2xl border-[4px] border-[#161B22] group-hover/project:-translate-y-4 group-hover/project:rotate-[-2deg] transition-all duration-700">
+  <div className="relative w-full h-full min-h-[220px] sm:min-h-[300px] lg:min-h-[450px] bg-[#0A0F18] overflow-hidden rounded-xl border border-white/10 group-hover/project:border-[#06b6d4] transition-all duration-700 shadow-2xl flex items-center justify-center gap-4 md:gap-8 p-4 sm:p-6">
+      <div className="relative w-[110px] sm:w-[140px] md:w-[180px] h-[220px] sm:h-[280px] md:h-[360px] rounded-[16px] md:rounded-[24px] overflow-hidden shadow-2xl border-[2px] md:border-[4px] border-[#161B22] group-hover/project:-translate-y-4 group-hover/project:rotate-[-2deg] transition-all duration-700">
          <Image src="/images/mobile_1.png" alt="App Screen 1" fill className="object-cover" />
       </div>
-      <div className="relative w-[140px] md:w-[180px] h-[280px] md:h-[360px] rounded-[24px] overflow-hidden shadow-2xl border-[4px] border-[#161B22] mt-12 group-hover/project:translate-y-4 group-hover/project:rotate-[2deg] transition-all duration-700">
+      <div className="relative w-[110px] sm:w-[140px] md:w-[180px] h-[220px] sm:h-[280px] md:h-[360px] rounded-[16px] md:rounded-[24px] overflow-hidden shadow-2xl border-[2px] md:border-[4px] border-[#161B22] mt-8 md:mt-12 group-hover/project:translate-y-4 group-hover/project:rotate-[2deg] transition-all duration-700">
          <Image src="/images/mobile_2.png" alt="App Screen 2" fill className="object-cover" />
       </div>
   </div>
@@ -944,7 +944,11 @@ export function Projects() {
 
                 {/* Visual Artifact */}
                 <div className="lg:w-[55%] w-full h-[220px] sm:h-[300px] md:h-[400px] lg:h-auto overflow-hidden relative rounded-xl">
-                   <div className="absolute lg:relative top-0 left-0 w-[900px] lg:w-full origin-top-left scale-[0.38] sm:scale-[0.55] md:scale-[0.8] lg:scale-100 transition-transform duration-300">
+                   <div className={`absolute lg:relative top-0 left-0 lg:w-full origin-top-left transition-transform duration-300 ${
+                     project.id === "02" 
+                       ? "w-full h-full scale-100" 
+                       : "w-[900px] scale-[0.38] sm:scale-[0.55] md:scale-[0.8] lg:scale-100"
+                   }`}>
                      {renderVisual(project.id)}
                    </div>
                 </div>
