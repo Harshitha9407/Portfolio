@@ -136,7 +136,7 @@ export function Hero() {
       {/* Living System Animations */}
       <LivingBackground />
 
-      <div className="w-full max-w-[1600px] mx-auto px-6 md:px-16 lg:px-24 relative z-10 flex flex-col items-start mt-8 md:mt-0">
+      <div className="w-full max-w-[1600px] mx-auto px-6 md:px-16 lg:px-24 relative z-10 flex flex-col items-start -mt-12 md:mt-0">
         
         {/* Typography & Content */}
         <motion.div 
@@ -180,7 +180,7 @@ export function Hero() {
             className="mt-6 md:mt-8"
           >
             <h2 className="font-mono text-[10px] md:text-xs lg:text-sm text-cyan tracking-[0.4em] uppercase font-bold">
-              SYSTEMS · BACKEND · AI · PRODUCT
+              SOFTWARE · MOBILE · FULL STACK
             </h2>
           </motion.div>
 

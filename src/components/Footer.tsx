@@ -115,7 +115,7 @@ export function Footer() {
             <div className="font-mono text-[9px] md:text-[11px] text-[#ECE6DA] tracking-[0.2em] uppercase pl-2 flex flex-wrap gap-x-3 gap-y-2 opacity-80">
               <span>SOFTWARE</span>
               <span className="text-[#7567B5]">•</span>
-              <span>PRODUCT</span>
+              <span>MOBILE</span>
               <span className="text-[#7567B5]">•</span>
               <span>FULL STACK</span>
             </div>
