@@ -31,9 +31,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${spaceGrotesk.variable} ${instrumentSerif.variable} ${jetbrainsMono.variable} antialiased`}
+        className={`${spaceGrotesk.variable} ${instrumentSerif.variable} ${jetbrainsMono.variable} antialiased overflow-x-hidden w-full`}
       >
-        {children}
+        <main className="w-full overflow-x-hidden flex flex-col min-h-screen">
+          {children}
+        </main>
       </body>
     </html>
   );
