@@ -168,11 +168,13 @@ export function Footer() {
                 )}
 
                 {buildState === 'ready' && (
-                  <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="pt-4 mt-2 border-t border-[#7567B5]/30 flex flex-col gap-3">
-                    <div className="text-[#A99CC8] text-[9px] mb-1">CONNECTION ESTABLISHED. AVAILABLE CHANNELS:</div>
-                    <a href="mailto:harshitha9407@gmail.com" className="flex items-center gap-3 hover:text-white transition-colors cursor-pointer"><span className="text-[#C8A45D]">&gt;</span> GMAIL</a>
-                    <a href="https://github.com/Harshitha9407" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-white transition-colors cursor-pointer"><span className="text-[#C8A45D]">&gt;</span> GITHUB</a>
-                    <a href="https://linkedin.com/in/harshithagummadi" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-white transition-colors cursor-pointer"><span className="text-[#C8A45D]">&gt;</span> LINKEDIN</a>
+                  <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="pt-4 mt-2 border-t border-[#7567B5]/30">
+                    <div className="text-[#A99CC8] text-[9px] mb-2 md:mb-3">CONNECTION ESTABLISHED. AVAILABLE CHANNELS:</div>
+                    <div className="flex flex-wrap gap-x-5 gap-y-3 items-center">
+                      <a href="mailto:harshitha9407@gmail.com" className="flex items-center gap-2 hover:text-white transition-colors cursor-pointer"><span className="text-[#C8A45D]">&gt;</span> GMAIL</a>
+                      <a href="https://github.com/Harshitha9407" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-white transition-colors cursor-pointer"><span className="text-[#C8A45D]">&gt;</span> GITHUB</a>
+                      <a href="https://linkedin.com/in/harshithagummadi" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-white transition-colors cursor-pointer"><span className="text-[#C8A45D]">&gt;</span> LINKEDIN</a>
+                    </div>
                   </motion.div>
                 )}
               </div>
@@ -184,11 +186,11 @@ export function Footer() {
         {/* ========================================= */}
         {/* RIGHT COLUMN: RESPONSIVE HIGH-FIDELITY HUD */}
         {/* ========================================= */}
-        <div className="w-full lg:w-[55%] relative flex justify-center items-center z-10 py-12 lg:py-0">
+        <div className="w-full lg:w-[55%] relative flex justify-center items-center z-10 h-[380px] sm:h-[450px] md:h-[600px] lg:h-auto overflow-hidden">
           
           {/* ASPECT-RATIO LOCKED CONTAINER FOR PERFECT RESPONSIVENESS */}
           <motion.div 
-            className="relative w-full max-w-[800px] aspect-square flex items-center justify-center"
+            className="absolute lg:relative w-[800px] h-[800px] lg:w-full lg:max-w-[800px] aspect-square flex items-center justify-center scale-[0.45] sm:scale-[0.55] md:scale-75 lg:scale-100 origin-center"
             style={{
               rotateX: useTransform(smoothY, [-0.5, 0.5], [5, -5]),
               rotateY: useTransform(smoothX, [-0.5, 0.5], [-5, 5]),
