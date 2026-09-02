@@ -943,7 +943,11 @@ export function Projects() {
                 </div>
 
                 {/* Visual Artifact */}
-                <div className="lg:w-[55%] w-full h-[220px] sm:h-[300px] md:h-[400px] lg:min-h-[500px] lg:h-auto overflow-hidden relative rounded-xl">
+                <div className={`lg:w-[55%] w-full overflow-hidden relative rounded-xl ${
+                  (project.id === "02" || project.id === "05")
+                    ? "h-auto lg:min-h-[500px]"
+                    : "h-[220px] sm:h-[300px] md:h-[400px] lg:min-h-[500px] lg:h-auto"
+                }`}>
                    <div className={`absolute lg:relative top-0 left-0 lg:w-full origin-top-left transition-transform duration-300 ${
                      (project.id === "02" || project.id === "05") 
                        ? "w-full h-full scale-100" 
