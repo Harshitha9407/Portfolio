@@ -45,9 +45,9 @@ export function Footer() {
 
   // Spaced perfectly in the exact geometric midpoints between the 7 tech stack nodes
   const contacts = [
-    { id: "email", label: "EMAIL", status: "ESTABLISH CONNECTION", link: "mailto:harshitha9407@gmail.com", angle: 231, r: 380 },
-    { id: "linkedin", label: "LINKEDIN", status: "PROFESSIONAL NETWORK", link: "https://www.linkedin.com/in/harshitha-gummadi/", angle: 334, r: 380 },
-    { id: "github", label: "GITHUB", status: "ENGINEERING WORK", link: "https://github.com/Harshitha9407", angle: 77, r: 380 }
+    { id: "email", label: "EMAIL", status: "ESTABLISH CONNECTION", link: "mailto:harshitha9407@gmail.com", angle: 231, r: 300 },
+    { id: "linkedin", label: "LINKEDIN", status: "PROFESSIONAL NETWORK", link: "https://www.linkedin.com/in/harshitha-gummadi/", angle: 334, r: 300 },
+    { id: "github", label: "GITHUB", status: "ENGINEERING WORK", link: "https://github.com/Harshitha9407", angle: 77, r: 300 }
   ];
 
   const techNodes = ["JAVA", "SPRING BOOT", "REACT", "FLUTTER", "POSTGRESQL", "KAFKA", "DOCKER"];
@@ -242,10 +242,10 @@ export function Footer() {
 
               {/* Tech Orbit Ring */}
               <motion.g style={{ originX: "50%", originY: "50%" }} className="animate-[spin_120s_linear_infinite_reverse]">
-                <circle cx="400" cy="400" r="280" fill="none" stroke="#7567B5" strokeWidth="0.5" opacity="0.3" />
+                <circle cx="400" cy="400" r="230" fill="none" stroke="#7567B5" strokeWidth="0.5" opacity="0.3" />
                 {techNodes.map((tech, i) => {
                   const angle = (i * (360 / techNodes.length));
-                  const coords = getCoords(angle, 280);
+                  const coords = getCoords(angle, 230);
                   return (
                     <g key={tech}>
                       <circle cx={coords.x} cy={coords.y} r="3" fill="#A99CC8" />
@@ -327,7 +327,7 @@ export function Footer() {
               >
                 {techNodes.map((tech, i) => {
                   const angle = (i * (360 / techNodes.length));
-                  const coords = getCoords(angle, 280);
+                  const coords = getCoords(angle, 230);
                   const left = `${(coords.x / 800) * 100}%`;
                   const top = `${(coords.y / 800) * 100}%`;
 
