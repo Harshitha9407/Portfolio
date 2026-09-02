@@ -1,5 +1,0 @@
-- `[x]` Step 1: Rewrite `Projects.tsx` to restore a clean, high-contrast, functional layout.
-- `[x]` Step 2: Remove broken 3D/blend effects from FlowForge and Health visuals, displaying real images crisply.
-- `[x]` Step 3: Fix typography and contrast for recruiter impact statements.
-- `[x]` Step 4: Fix header alignment.
-- `[x]` Step 5: Test the build.
