@@ -39,12 +39,22 @@ export function Navigation() {
       </div>
 
       {/* Mobile Menu */}
-      <div className="md:hidden flex flex-col items-center w-full px-6">
+      <div className="md:hidden flex flex-col items-end w-full px-6">
         <button 
           onClick={() => setIsOpen(!isOpen)} 
-          className="px-6 py-3 bg-black/70 backdrop-blur-md border border-white/10 rounded-full text-white font-mono text-xs tracking-widest uppercase shadow-lg w-full max-w-[200px]"
+          className="group flex flex-col gap-1.5 items-end justify-center w-12 h-12 bg-black/70 backdrop-blur-md border border-white/10 rounded-full shadow-lg z-50"
+          aria-label="Toggle Menu"
         >
-          {isOpen ? "CLOSE" : "MENU"}
+          {isOpen ? (
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white mx-auto">
+              <path d="M18 6L6 18M6 6l12 12" />
+            </svg>
+          ) : (
+            <div className="flex flex-col gap-1.5 pr-3.5">
+              <div className="w-5 h-[2px] bg-white rounded-full"></div>
+              <div className="w-3 h-[2px] bg-white rounded-full transition-all duration-300 group-hover:w-5 self-end"></div>
+            </div>
+          )}
         </button>
         
         {isOpen && (
