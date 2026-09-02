@@ -148,21 +148,21 @@ export function Footer() {
                 
                 {['idea', 'build', 'ship', 'ready'].includes(buildState) && (
                   <motion.div initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} className="text-[#ECE6DA] flex justify-between items-center pb-2">
-                    <span className="flex items-center gap-3"><span className="text-[#7567B5]">[01]</span> IDEA</span> 
+                    <a href="mailto:harshitha9407@gmail.com" className="flex items-center gap-3 hover:text-white transition-colors cursor-pointer"><span className="text-[#7567B5]">[01]</span> GMAIL</a> 
                     <span className="text-[#C8A45D]">✓</span>
                   </motion.div>
                 )}
                 
                 {['build', 'ship', 'ready'].includes(buildState) && (
                   <motion.div initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} className="text-[#ECE6DA] flex justify-between items-center pb-2">
-                    <span className="flex items-center gap-3"><span className="text-[#7567B5]">[02]</span> BUILD</span> 
+                    <a href="https://github.com/Harshitha9407" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-white transition-colors cursor-pointer"><span className="text-[#7567B5]">[02]</span> GITHUB</a> 
                     <span className="text-[#C8A45D]">✓</span>
                   </motion.div>
                 )}
                 
                 {['ship', 'ready'].includes(buildState) && (
                   <motion.div initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} className="text-[#ECE6DA] flex justify-between items-center pb-2">
-                    <span className="flex items-center gap-3"><span className="text-[#7567B5]">[03]</span> SHIP</span> 
+                    <a href="https://linkedin.com/in/harshithagummadi" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-white transition-colors cursor-pointer"><span className="text-[#7567B5]">[03]</span> LINKEDIN</a> 
                     <span className="text-[#C8A45D]">✓</span>
                   </motion.div>
                 )}
