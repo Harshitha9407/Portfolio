@@ -1,5 +1,6 @@
 import { Loader } from "@/components/Loader";
 import { Navigation } from "@/components/Navigation";
+import { Terminal } from "@/components/Terminal";
 import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
 import { Experience } from "@/components/Experience";
@@ -15,6 +16,7 @@ export default function Home() {
       <Cursor />
       <Loader />
       <Navigation />
+      <Terminal />
       
       <Hero />
       <About />
