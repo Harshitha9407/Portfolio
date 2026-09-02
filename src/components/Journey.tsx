@@ -292,12 +292,12 @@ export function Journey() {
         {/* ========================================= */}
         {/* CENTER COLUMN: KNOWLEDGE PATH (15%)       */}
         {/* ========================================= */}
-        <div className="w-full lg:w-[15%] flex lg:flex-col justify-between items-center relative py-0 lg:py-16 z-30">
+        <div className="hidden lg:flex w-[15%] flex-col justify-between items-center relative py-16 z-30">
           
-          {/* Mobile Horizontal Track / Desktop Vertical Track */}
-          <div className="absolute top-1/2 left-0 right-0 h-[1px] lg:h-auto lg:w-[1px] lg:top-16 lg:bottom-16 lg:left-1/2 -translate-y-1/2 lg:translate-y-0 lg:-translate-x-1/2 bg-[#7567B5]/20">
+          {/* Desktop Vertical Track */}
+          <div className="absolute lg:w-[1px] lg:top-16 lg:bottom-16 lg:left-1/2 lg:-translate-x-1/2 bg-[#7567B5]/20">
             <motion.div 
-              className="h-full w-full bg-gradient-to-r lg:bg-gradient-to-b from-[#7567B5] via-[#C8A45D] to-[#7567B5] origin-left lg:origin-top"
+              className="h-full w-full lg:bg-gradient-to-b from-[#7567B5] via-[#C8A45D] to-[#7567B5] lg:origin-top"
               initial={{ scaleX: 0, scaleY: 0 }}
               animate={isInView ? { scaleX: 1, scaleY: 1 } : {}}
               transition={{ duration: 2, ease: "easeInOut", delay: 0.2 }}

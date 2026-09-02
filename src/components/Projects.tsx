@@ -943,8 +943,10 @@ export function Projects() {
                 </div>
 
                 {/* Visual Artifact */}
-                <div className="lg:w-[55%] w-full">
-                   {renderVisual(project.id)}
+                <div className="lg:w-[55%] w-full overflow-x-auto pb-4 hide-scrollbar snap-x snap-mandatory">
+                   <div className="min-w-[800px] lg:min-w-0 snap-center">
+                     {renderVisual(project.id)}
+                   </div>
                 </div>
 
              </motion.div>
