@@ -190,7 +190,7 @@ export function Footer() {
           
           {/* ASPECT-RATIO LOCKED CONTAINER FOR PERFECT RESPONSIVENESS */}
           <motion.div 
-            className="absolute left-1/2 top-1/2 -ml-[400px] -mt-[400px] lg:static lg:ml-0 lg:mt-0 w-[800px] h-[800px] lg:w-full lg:max-w-[800px] aspect-square flex items-center justify-center scale-[0.45] sm:scale-[0.55] md:scale-75 lg:scale-100 origin-center"
+            className="absolute left-1/2 top-1/2 -ml-[400px] -mt-[400px] lg:static lg:ml-0 lg:mt-0 w-[800px] h-[800px] lg:w-full lg:max-w-[800px] aspect-square flex items-center justify-center scale-[0.38] sm:scale-[0.55] md:scale-75 lg:scale-100 origin-center"
             style={{
               rotateX: useTransform(smoothY, [-0.5, 0.5], [5, -5]),
               rotateY: useTransform(smoothX, [-0.5, 0.5], [-5, 5]),
