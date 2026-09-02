@@ -173,7 +173,7 @@ export function Footer() {
                     <div className="flex flex-wrap gap-x-5 gap-y-3 items-center">
                       <a href="mailto:harshitha9407@gmail.com" className="flex items-center gap-2 hover:text-white transition-colors cursor-pointer"><span className="text-[#C8A45D]">&gt;</span> GMAIL</a>
                       <a href="https://github.com/Harshitha9407" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-white transition-colors cursor-pointer"><span className="text-[#C8A45D]">&gt;</span> GITHUB</a>
-                      <a href="https://linkedin.com/in/harshithagummadi" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-white transition-colors cursor-pointer"><span className="text-[#C8A45D]">&gt;</span> LINKEDIN</a>
+                      <a href="https://www.linkedin.com/in/harshitha-gummadi/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-white transition-colors cursor-pointer"><span className="text-[#C8A45D]">&gt;</span> LINKEDIN</a>
                     </div>
                   </motion.div>
                 )}

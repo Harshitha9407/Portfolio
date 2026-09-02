@@ -79,7 +79,7 @@ export function Terminal() {
         if (args[0] === "resume.pdf") {
           newHistory.push({ text: "Error: Binary file cannot be displayed in terminal. Try downloading instead.", type: 'out' });
         } else if (args[0] === "contact.txt") {
-          newHistory.push({ text: "Email: harshitha9407@gmail.com | GitHub: Harshitha9407 | LinkedIn: in/harshithagummadi", type: 'out' });
+          newHistory.push({ text: "Email: harshitha9407@gmail.com | GitHub: Harshitha9407 | LinkedIn: in/harshitha-gummadi", type: 'out' });
         } else if (!args[0]) {
           newHistory.push({ text: "cat: missing file operand", type: 'out' });
         } else {
