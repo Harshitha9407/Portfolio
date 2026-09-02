@@ -115,7 +115,7 @@ export function Terminal() {
         className="fixed bottom-6 right-6 z-50 h-12 rounded-full bg-[#16172A]/80 backdrop-blur-md border border-[#7567B5]/40 flex items-center justify-center group hover:border-[#C8A45D]/60 hover:shadow-[0_0_20px_rgba(200,164,93,0.2)] transition-all px-4 md:px-5 gap-3"
       >
         <span className="font-mono text-[#C8A45D] text-lg font-bold group-hover:text-white transition-colors">{'>_'}</span>
-        <span className="font-mono text-[9px] md:text-[10px] text-[#A99CC8] tracking-[0.2em] uppercase group-hover:text-[#ECE6DA] transition-colors">TERMINAL</span>
+        <span className="font-mono text-[9px] md:text-[10px] text-[#A99CC8] tracking-[0.2em] uppercase group-hover:text-[#ECE6DA] transition-colors">COMMANDS</span>
       </button>
 
       {/* Terminal Window */}
