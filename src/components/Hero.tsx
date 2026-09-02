@@ -191,8 +191,8 @@ export function Hero() {
             className="mt-8 md:mt-12 max-w-xl"
           >
             <p className="text-xl md:text-2xl font-heading text-white leading-snug font-medium mb-6 uppercase tracking-tight">
-              I BUILD SYSTEMS THAT TURN<br className="hidden md:block" />
-              COMPLEXITY INTO SOMETHING<br className="hidden md:block" />
+              I BUILD SYSTEMS THAT TURN <br className="hidden md:block" />
+              COMPLEXITY INTO SOMETHING <br className="hidden md:block" />
               PEOPLE CAN USE.
             </p>
             <p className="text-sm md:text-base font-sans text-white/60 leading-relaxed font-light mb-12">
