@@ -948,10 +948,10 @@ export function Projects() {
                     ? "h-auto lg:min-h-[500px]"
                     : "h-[220px] sm:h-[300px] md:h-[400px] lg:min-h-[500px] lg:h-auto"
                 }`}>
-                   <div className={`absolute lg:relative top-0 left-0 lg:w-full origin-top-left transition-transform duration-300 ${
+                   <div className={`top-0 left-0 lg:w-full origin-top-left transition-transform duration-300 ${
                      (project.id === "02" || project.id === "05") 
-                       ? "w-full h-full scale-100" 
-                       : "w-[900px] scale-[0.38] sm:scale-[0.55] md:scale-[0.8] lg:scale-100"
+                       ? "relative w-full h-full scale-100" 
+                       : "absolute lg:relative w-[900px] scale-[0.38] sm:scale-[0.55] md:scale-[0.8] lg:scale-100"
                    }`}>
                      {renderVisual(project.id)}
                    </div>
