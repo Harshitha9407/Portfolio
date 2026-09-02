@@ -28,7 +28,11 @@ export function Terminal() {
     e.preventDefault();
     if (!input.trim()) return;
 
-    const cmd = input.trim().toLowerCase();
+    const inputTrimmed = input.trim();
+    const cmdParts = inputTrimmed.split(/\s+/);
+    const cmd = cmdParts[0].toLowerCase();
+    const args = cmdParts.slice(1);
+    
     const newHistory = [...history, { text: `> ${input}`, type: 'in' as const }];
 
     switch (cmd) {
@@ -38,7 +42,13 @@ export function Terminal() {
         newHistory.push({ text: "  skills     - Access system capabilities", type: 'out' });
         newHistory.push({ text: "  experience - Load mission logs", type: 'out' });
         newHistory.push({ text: "  contact    - Establish connection", type: 'out' });
-        newHistory.push({ text: "  clear      - Clear terminal", type: 'out' });
+        newHistory.push({ text: "  whoami     - Print current user identity", type: 'out' });
+        newHistory.push({ text: "  ls         - List directory contents", type: 'out' });
+        newHistory.push({ text: "  cat <file> - Concatenate and print files", type: 'out' });
+        newHistory.push({ text: "  echo <msg> - Print message to terminal", type: 'out' });
+        newHistory.push({ text: "  date       - Print system date and time", type: 'out' });
+        newHistory.push({ text: "  sudo       - Execute a command as superuser", type: 'out' });
+        newHistory.push({ text: "  clear      - Clear terminal output", type: 'out' });
         break;
       case "projects":
         document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
@@ -55,6 +65,35 @@ export function Terminal() {
       case "contact":
         document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
         newHistory.push({ text: "Opening SECURE TRANSMISSION...", type: 'out' });
+        break;
+      case "whoami":
+        newHistory.push({ text: "Harshitha Gummadi - Full Stack & Mobile Engineer", type: 'out' });
+        break;
+      case "ls":
+        newHistory.push({ text: "drwxr-xr-x  projects/", type: 'out' });
+        newHistory.push({ text: "drwxr-xr-x  skills/", type: 'out' });
+        newHistory.push({ text: "-rw-r--r--  resume.pdf", type: 'out' });
+        newHistory.push({ text: "-rw-r--r--  contact.txt", type: 'out' });
+        break;
+      case "cat":
+        if (args[0] === "resume.pdf") {
+          newHistory.push({ text: "Error: Binary file cannot be displayed in terminal. Try downloading instead.", type: 'out' });
+        } else if (args[0] === "contact.txt") {
+          newHistory.push({ text: "Email: harshitha9407@gmail.com | GitHub: Harshitha9407 | LinkedIn: in/harshithagummadi", type: 'out' });
+        } else if (!args[0]) {
+          newHistory.push({ text: "cat: missing file operand", type: 'out' });
+        } else {
+          newHistory.push({ text: `cat: ${args[0]}: No such file or directory`, type: 'out' });
+        }
+        break;
+      case "echo":
+        newHistory.push({ text: args.join(" "), type: 'out' });
+        break;
+      case "date":
+        newHistory.push({ text: new Date().toString(), type: 'out' });
+        break;
+      case "sudo":
+        newHistory.push({ text: "Permission denied. This incident will be reported to the administrator.", type: 'out' });
         break;
       case "clear":
         setHistory([{ text: "Terminal cleared.", type: 'out' }]);
