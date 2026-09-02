@@ -148,22 +148,31 @@ export function Footer() {
                 
                 {['idea', 'build', 'ship', 'ready'].includes(buildState) && (
                   <motion.div initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} className="text-[#ECE6DA] flex justify-between items-center pb-2">
-                    <a href="mailto:harshitha9407@gmail.com" className="flex items-center gap-3 hover:text-white transition-colors cursor-pointer"><span className="text-[#7567B5]">[01]</span> GMAIL</a> 
+                    <span className="flex items-center gap-3"><span className="text-[#7567B5]">[01]</span> IDEA</span> 
                     <span className="text-[#C8A45D]">✓</span>
                   </motion.div>
                 )}
                 
                 {['build', 'ship', 'ready'].includes(buildState) && (
                   <motion.div initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} className="text-[#ECE6DA] flex justify-between items-center pb-2">
-                    <a href="https://github.com/Harshitha9407" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-white transition-colors cursor-pointer"><span className="text-[#7567B5]">[02]</span> GITHUB</a> 
+                    <span className="flex items-center gap-3"><span className="text-[#7567B5]">[02]</span> BUILD</span> 
                     <span className="text-[#C8A45D]">✓</span>
                   </motion.div>
                 )}
                 
                 {['ship', 'ready'].includes(buildState) && (
                   <motion.div initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} className="text-[#ECE6DA] flex justify-between items-center pb-2">
-                    <a href="https://linkedin.com/in/harshithagummadi" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-white transition-colors cursor-pointer"><span className="text-[#7567B5]">[03]</span> LINKEDIN</a> 
+                    <span className="flex items-center gap-3"><span className="text-[#7567B5]">[03]</span> SHIP</span> 
                     <span className="text-[#C8A45D]">✓</span>
+                  </motion.div>
+                )}
+
+                {buildState === 'ready' && (
+                  <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="pt-4 mt-2 border-t border-[#7567B5]/30 flex flex-col gap-3">
+                    <div className="text-[#A99CC8] text-[9px] mb-1">CONNECTION ESTABLISHED. AVAILABLE CHANNELS:</div>
+                    <a href="mailto:harshitha9407@gmail.com" className="flex items-center gap-3 hover:text-white transition-colors cursor-pointer"><span className="text-[#C8A45D]">&gt;</span> GMAIL</a>
+                    <a href="https://github.com/Harshitha9407" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-white transition-colors cursor-pointer"><span className="text-[#C8A45D]">&gt;</span> GITHUB</a>
+                    <a href="https://linkedin.com/in/harshithagummadi" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-white transition-colors cursor-pointer"><span className="text-[#C8A45D]">&gt;</span> LINKEDIN</a>
                   </motion.div>
                 )}
               </div>
